@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var goa = {
+        name: "amar",
+        village:"goa"
+    }
+
+    var mumbai = {
+        name:"akhbar",
+        village:"mumbai"
+    }
+
+    var kashmir = {
+        name:"anthony",
+        village:"kashmir"
+    }
+
+
+    function skills(skills){
+        console.log(`${this.name} is a ${skills} live in $ {this.village}`)
+    }
+
+
+    skills.call(goa,["writer","runner"])
+    skills.call(mumbai,["runner","swimmer"])
+    skills.call(kashmir,["swimmer","writer"])
+
+
+</script>
